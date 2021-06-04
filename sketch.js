@@ -4,7 +4,8 @@ var addFood;
 var foodObj;
 
 //create feed and lastFed variable here
-
+var feed;
+var lastFed;
 
 function preload(){
 sadDog=loadImage("Dog.png");
@@ -25,7 +26,6 @@ function setup() {
   dog.scale=0.15;
 
   //create feed the dog button here
-
   addFood=createButton("Add Food");
   addFood.position(800,95);
   addFood.mousePressed(addFoods);
@@ -35,7 +35,14 @@ function setup() {
 function draw() {
   background(46,139,87);
   foodObj.display();
+  if(lastFed>=12){
 
+
+  }else if (lastfed>=0){
+    test("lastFeed : 12 AM",350,50);
+  }else{
+
+  }
   //write code to read fedtime value from the database 
   
  
